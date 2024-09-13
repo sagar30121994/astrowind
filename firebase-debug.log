@@ -1,0 +1,92 @@
+[debug] [2024-09-13T09:42:37.688Z] ----------------------------------------------------------------------
+[debug] [2024-09-13T09:42:37.691Z] Command:       /Users/macbookpro/.nvm/versions/node/v20.9.0/bin/node /Users/macbookpro/.nvm/versions/node/v20.9.0/bin/firebase init hosting
+[debug] [2024-09-13T09:42:37.692Z] CLI Version:   13.17.0
+[debug] [2024-09-13T09:42:37.692Z] Platform:      darwin
+[debug] [2024-09-13T09:42:37.692Z] Node Version:  v20.9.0
+[debug] [2024-09-13T09:42:37.692Z] Time:          Fri Sep 13 2024 15:12:37 GMT+0530 (India Standard Time)
+[debug] [2024-09-13T09:42:37.692Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-13T09:42:37.695Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-09-13T09:42:37.754Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-13T09:42:37.754Z] > authorizing via signed-in user (thoratsagar87@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/macbookpro/corporatesite/astrowind
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-13T09:42:38.535Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-09-13T09:42:38.536Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-09-13T09:43:12.979Z] > refreshing access token with scopes: []
+[debug] [2024-09-13T09:43:12.981Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-09-13T09:43:12.981Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-13T09:43:13.196Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-09-13T09:43:13.196Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-13T09:43:13.213Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-09-13T09:43:13.213Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"appschedio_site","name":"appschedio_site"}
+[debug] [2024-09-13T09:43:14.662Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2024-09-13T09:43:14.662Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"},{"field":"display_name","description":"project display name contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2024-09-13T09:43:14.800Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at responseToError (/Users/macbookpro/.nvm/versions/node/v20.9.0/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/macbookpro/.nvm/versions/node/v20.9.0/lib/node_modules/firebase-tools/lib/apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-09-13T09:43:24.502Z] ----------------------------------------------------------------------
+[debug] [2024-09-13T09:43:24.506Z] Command:       /Users/macbookpro/.nvm/versions/node/v20.9.0/bin/node /Users/macbookpro/.nvm/versions/node/v20.9.0/bin/firebase init hosting
+[debug] [2024-09-13T09:43:24.506Z] CLI Version:   13.17.0
+[debug] [2024-09-13T09:43:24.506Z] Platform:      darwin
+[debug] [2024-09-13T09:43:24.506Z] Node Version:  v20.9.0
+[debug] [2024-09-13T09:43:24.507Z] Time:          Fri Sep 13 2024 15:13:24 GMT+0530 (India Standard Time)
+[debug] [2024-09-13T09:43:24.507Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-13T09:43:24.514Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-13T09:43:24.514Z] > authorizing via signed-in user (thoratsagar87@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/macbookpro/corporatesite/astrowind
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-13T09:43:26.652Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-09-13T09:43:28.238Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-09-13T09:43:28.238Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project fun-target (fun target) 
+[info] 
+=== Hosting Setup
+[debug] [2024-09-13T09:43:51.158Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fun-target [none]
+[debug] [2024-09-13T09:43:51.728Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fun-target 200
+[debug] [2024-09-13T09:43:51.729Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fun-target {"projectId":"fun-target","projectNumber":"472975339625","displayName":"fun target","name":"projects/fun-target","resources":{"hostingSite":"fun-target","realtimeDatabaseInstance":"fun-target","storageBucket":"fun-target.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_8de7a0b4-f1ac-4e33-a137-148ce73c9a5b"}
+[info] 
+[info] i  Detected a .git folder at /Users/macbookpro/corporatesite/astrowind 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=54380566&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
